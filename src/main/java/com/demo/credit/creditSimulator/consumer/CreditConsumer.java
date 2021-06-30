@@ -40,6 +40,7 @@ public class CreditConsumer {
 
     public boolean evaluate() {
         this.prepareRanges();
+
         for (SimulationRule rule : rules) {
             if (rule.check(amount, quotas, income)) {
                 return true;
