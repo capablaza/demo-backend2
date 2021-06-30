@@ -42,7 +42,7 @@ public class CreditConsumerTest {
         //check evaluation that's correct
         assertThat(answer).isTrue();
     }
-/*
+
     @Test
     public void test2(){
         //check second range test case
@@ -56,7 +56,7 @@ public class CreditConsumerTest {
         //check evaluation that's correct
         assertThat(consumer.evaluate()).isTrue();
     }
-
+/*
     @Test
     public void test3(){
         //check third range test case
@@ -89,7 +89,7 @@ public class CreditConsumerTest {
         assertThat(consumer.evaluate()).isFalse();
     }
 
-    /*
+
     @Test
     public void test5(){
         //check second range test case
@@ -103,7 +103,7 @@ public class CreditConsumerTest {
         //check evaluation that's correct
         assertThat(consumer.evaluate()).isFalse();
     }
-
+/*
     @Test
     public void test6(){
         //check third range test case
