@@ -2,6 +2,7 @@ package com.demo.credit.creditSimulator.consumer;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.*;
 
 public class CreditConsumerTest {
@@ -24,7 +25,7 @@ public class CreditConsumerTest {
 
     //Check approve evaluation according range rules
     @Test
-    public void test1(){
+    public void test1() {
 
         //prepare - arrange
         //check first range test case
@@ -44,7 +45,7 @@ public class CreditConsumerTest {
     }
 
     @Test
-    public void test2(){
+    public void test2() {
         //check second range test case
         String name = "peter";
         String email = "peter@email.com";
@@ -56,27 +57,25 @@ public class CreditConsumerTest {
         //check evaluation that's correct
         assertThat(consumer.evaluate()).isTrue();
     }
-/*
+
     @Test
-    public void test3(){
+    public void test3() {
         //check third range test case
         String name = "peter";
         String email = "peter@email.com";
         Integer amount = 350000; // $3.500.000
         Integer quotas = 18;
-        Integer income = 1000000; // $800.000
+        Integer income = 1000000; // $1.000.000
         CreditConsumer consumer = new CreditConsumer(name, email, amount, quotas, income);
 
         //check evaluation that's correct
         assertThat(consumer.evaluate()).isTrue();
     }
 
-    */
-
 
     //Check reject evaluation according range rules
     @Test
-    public void test4(){
+    public void test4() {
         //check first range test case
         String name = "peter";
         String email = "peter@email.com";
@@ -91,7 +90,7 @@ public class CreditConsumerTest {
 
 
     @Test
-    public void test5(){
+    public void test5() {
         //check second range test case
         String name = "peter";
         String email = "peter@email.com";
@@ -103,9 +102,9 @@ public class CreditConsumerTest {
         //check evaluation that's correct
         assertThat(consumer.evaluate()).isFalse();
     }
-/*
+
     @Test
-    public void test6(){
+    public void test6() {
         //check third range test case
         String name = "peter";
         String email = "peter@email.com";
@@ -118,5 +117,5 @@ public class CreditConsumerTest {
         assertThat(consumer.evaluate()).isFalse();
     }
 
-     */
+
 }
